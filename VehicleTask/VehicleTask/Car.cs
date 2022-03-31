@@ -39,7 +39,11 @@ namespace VehicleTask
             return cheks;
         }
 
-
+        public void AllInfo()
+        {
+            Console.WriteLine($"Fuel capacity: {FuelCapacity}L\nCurrent fuel: {CurrentFuel}L\nFuel for one km: {FuelFor1km}L\n" +
+                $"Millage: {Millage}km\nColor: {Color}\nBrand: {Brand}");
+        }
         public override void ShowInfo()
         {
             Console.WriteLine($"Color: {Color}, Brand: {Brand}, Millage: {Millage}");
